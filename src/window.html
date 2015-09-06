@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProjectSheet</title>
+  <link rel="stylesheet" href="styles/application.css" type="text/css">
+</head>
+<body>
+  <div class="wrapper" id="timesheet">
+    <ul v-repeat="tasks">
+      <li class="active">
+        <div class="pull-right">
+          {{ time }}{{ unit }}
+        </div>
+        {{ name }}
+      </li>
+    </ul>
+  </div>
+    
+  <script src="scripts/application.js"></script>
+</body>
+</html>
